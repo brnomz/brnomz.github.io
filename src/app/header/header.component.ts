@@ -17,4 +17,11 @@ export class HeaderComponent implements OnInit {
       behavior: 'smooth',
     });
   }
+
+  scroll(id: string) {
+    console.log(`scrolling to ${id}`);
+    let element = document.getElementById(id);
+    element?.scrollIntoView(true);
+  }
+
 }
