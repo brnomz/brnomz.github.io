@@ -14,7 +14,7 @@ export class ExperienceComponent implements OnInit {
   ngOnInit(): void {
     this.events = [
       {
-        status: 'Mercury NZ',
+        status: 'Mercury',
         date: 'August 2021 - Present',
         icon: PrimeIcons.CIRCLE,
         color: 'grey',

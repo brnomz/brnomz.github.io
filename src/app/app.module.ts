@@ -11,7 +11,7 @@ import { ButtonModule } from 'primeng/button';
 import { TimelineModule } from 'primeng/timeline';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
-import { NgxSpinnerModule } from "ngx-spinner";
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
     CardModule,
     ButtonModule,
     TimelineModule,
-    NgxSpinnerModule.forRoot({ type: 'ball-scale' })
+    NgxSpinnerModule.forRoot({ type: 'square-jelly-box' }),
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
