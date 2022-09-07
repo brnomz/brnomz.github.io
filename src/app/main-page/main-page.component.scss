@@ -1,0 +1,131 @@
+.flex-container-main {
+  display: flex;
+  flex-direction: row;
+  background-color: gainsboro;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  margin-top: 80px;
+  height: 350px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.details {
+  display: block;
+  margin-top: 80px;
+  margin-left: 0;
+  margin-right: auto;
+  height: 350px;
+  width: 348px;
+  background-color: honeydew;
+  font-size: 12px;
+  padding-left: 15px;
+  border: 1px solid black;
+}
+
+.details-header h1 {
+  margin-bottom: 0px;
+}
+
+.details-header p {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.details-contact h4 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.details-contact p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.flex-container-social-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+
+.flex-container-social-box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: grey;
+  margin: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 698px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.flex-container-social-item {
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  height: 32px;
+  width: 32px;
+}
+
+.flex-container-intro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+
+.flex-container-intro-box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aliceblue;
+  width: 675px;
+  padding: 20px;
+  line-height: 1.5em;
+  font-size: 15px;
+}
+
+.flex-container-intro .intro-hello {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.flex-container-intro-box p {
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+}

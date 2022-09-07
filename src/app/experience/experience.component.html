@@ -1,0 +1,25 @@
+<div id="experience" class="flex-container-experience-header">
+  <h3>EXPERIENCE</h3>
+</div>
+
+<div class="flex-container-experience-box">
+  <p-timeline [value]="events" align="alternate">
+    <ng-template pTemplate="marker" let-event>
+      <span>
+        <i [style.color]="event.color" [ngClass]="event.icon"></i>
+      </span>
+    </ng-template>
+    <ng-template pTemplate="content" let-event>
+      <p-card [header]="event.status" [subheader]="event.date">
+        <img
+          *ngIf="event.image"
+          [src]="'assets/showcase/images/demo/product/' + event.image"
+          [alt]="event.name"
+          width="200"
+          class="shadow-2"
+        />
+        <p>{{ event.description }}</p>
+      </p-card>
+    </ng-template>
+  </p-timeline>
+</div>
