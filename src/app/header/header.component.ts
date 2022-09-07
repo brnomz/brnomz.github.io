@@ -23,5 +23,4 @@ export class HeaderComponent implements OnInit {
     let element = document.getElementById(id);
     element?.scrollIntoView(true);
   }
-
 }
