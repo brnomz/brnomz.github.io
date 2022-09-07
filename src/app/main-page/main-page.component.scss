@@ -31,7 +31,7 @@ img {
   height: 350px;
   width: 348px;
   background-color: honeydew;
-  font-size: 12px;
+  font-size: 14px;
   padding-left: 15px;
   border: 1px solid black;
 }
@@ -42,17 +42,18 @@ img {
 
 .details-header p {
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .details-contact h4 {
-  margin-top: 10px;
+  margin-top: 14px;
   margin-bottom: 0px;
 }
 
 .details-contact p {
   margin-top: 0px;
   margin-bottom: 0px;
+  font-size: 12px;
 }
 
 .flex-container-social-main {
