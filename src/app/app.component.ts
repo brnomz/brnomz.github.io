@@ -9,6 +9,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 export class AppComponent implements OnInit {
   constructor(private spinner: NgxSpinnerService) {}
 
+  // https://napster2210.github.io/ngx-spinner/ can be used to test animations
   ngOnInit() {
     /** spinner starts on init */
     this.spinner.show();
