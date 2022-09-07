@@ -17,7 +17,7 @@ export class ExperienceComponent implements OnInit {
         status: 'Mercury NZ',
         date: 'August 2021 - Present',
         icon: PrimeIcons.CIRCLE,
-        color: '#9C27B0',
+        color: 'grey',
         description:
           'Responsible for technology thought leadership, providing the elaboration and detailed design of Mercury’s technology solutions and the oversight of solution implementations relating to the Digital platforms and associated ecosystem.',
       },
@@ -26,7 +26,7 @@ export class ExperienceComponent implements OnInit {
         location: 'Sao Paulo (Brazil)',
         date: 'April 2020 - May 2021',
         icon: PrimeIcons.CIRCLE,
-        color: '#673AB7',
+        color: 'grey',
         description:
           'Defined technology roadmap for Cloud (Azure, AWS and GCP) and DevOps projects',
       },
@@ -34,7 +34,7 @@ export class ExperienceComponent implements OnInit {
         status: 'Accenture New Zealand',
         date: 'July 2016 - March 2020',
         icon: PrimeIcons.CIRCLE,
-        color: '#FF9800',
+        color: 'grey',
         description:
           'Defined the technology strategy and roadmap to automate code development while building tasks using DevOps tools and principles',
       },
@@ -42,7 +42,7 @@ export class ExperienceComponent implements OnInit {
         status: 'Accenture Brazil',
         date: 'March 2007 - July 2016',
         icon: PrimeIcons.CIRCLE,
-        color: '#607D8B',
+        color: 'grey',
         description:
           'Improved system quality by identifying issues and common patterns, and developing standard operating procedures',
       },
