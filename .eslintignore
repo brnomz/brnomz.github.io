@@ -1,9 +1,3 @@
-.angular/
-.vscode/
-*.svg
-*.jpg
-*.png
-.eslintignore
 .husky/pre-commit
 .prettierignore
 .browserslistrc

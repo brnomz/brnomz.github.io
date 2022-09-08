@@ -10,14 +10,25 @@
       </span>
     </ng-template>
     <ng-template pTemplate="content" let-event>
-      <p-card [header]="event.status" [subheader]="event.date">
-        <img
-          *ngIf="event.image"
-          [src]="'assets/showcase/images/demo/product/' + event.image"
-          [alt]="event.name"
-          width="200"
-          class="shadow-2"
-        />
+      <p-card
+        [header]="event.company"
+        [subheader]="event.date"
+        style="width: 48%"
+        styleClass="p-card-shadow"
+      >
+        <ng-template pTemplate="header">
+          <a [href]="event.url"
+            ><img
+              [alt]="event.company"
+              [src]="event.image"
+              style="
+                width: 20%;
+                margin-left: 3%;
+                margin-top: 3%;
+                margin-right: 3%;
+              "
+          /></a>
+        </ng-template>
         <p>{{ event.description }}</p>
       </p-card>
     </ng-template>
