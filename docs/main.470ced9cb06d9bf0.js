@@ -18115,7 +18115,7 @@
                   M(59, "p"),
                   ee(
                     60,
-                    " I have a preference for permanent roles and remote (or hybrid / twice a week in the office is fine too). I can also provide references, you just have to request it "
+                    " I have a preference for permanent roles and remote (or hybrid / twice a week in the office is fine too). I can also provide references on request. "
                   ),
                   A()()());
               },
