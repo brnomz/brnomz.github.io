@@ -1,6 +1,6 @@
 @font-face {
   font-family: average;
-  src: url(AverageSans-Regular.125e49bc209ba27f.ttf) format("truetype");
+  src: url(OpenSans-Regular.4543090a37b427da.ttf) format("truetype");
   font-weight: 700;
 }
 html {
@@ -20,18 +20,15 @@ body .p-component {
   line-height: 100px;
   background-color: #85929e;
   height: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   scroll-margin: 52px;
 }
 .flex-container-header h3 {
   background-color: #85929e;
   color: #eaecee;
   height: 100px;
-  margin: 10px;
 }
 .spacing {
-  margin-top: 50px;
+  background-color: #ebedef;
 }
 i {
   color: #eaecee;

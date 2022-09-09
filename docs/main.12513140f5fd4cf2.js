@@ -553,7 +553,7 @@
       function oo(e) {
         return e && "function" == typeof e.schedule;
       }
-      function ee(e, t) {
+      function X(e, t) {
         return function (r) {
           if ("function" != typeof e)
             throw new TypeError(
@@ -822,7 +822,7 @@
         return "function" == typeof t
           ? (r) =>
               r.pipe(
-                $e((i, s) => ke(e(i, s)).pipe(ee((o, a) => t(i, o, s, a))), n)
+                $e((i, s) => ke(e(i, s)).pipe(X((o, a) => t(i, o, s, a))), n)
               )
           : ("number" == typeof t && (n = t), (r) => r.lift(new TE(e, n)));
       }
@@ -1395,7 +1395,7 @@
       function v() {
         return B.lFrame.lView;
       }
-      function Z() {
+      function Y() {
         return B.lFrame.tView;
       }
       function Re() {
@@ -2079,7 +2079,7 @@
           ? yh(e, void 0, t)
           : Ji.get(e, t & P.Optional ? null : void 0, t);
       }
-      function M(e, t = P.Default) {
+      function I(e, t = P.Default) {
         return (
           (function KE() {
             return Wl;
@@ -2095,7 +2095,7 @@
               (t.host && 1) |
               (t.self && 2) |
               (t.skipSelf && 4)),
-          M(e, t)
+          I(e, t)
         );
       }
       function wu(e) {
@@ -2115,8 +2115,8 @@
                   : (s |= l)
                 : (i = a);
             }
-            t.push(M(i, s));
-          } else t.push(M(r));
+            t.push(I(i, s));
+          } else t.push(I(r));
         }
         return t;
       }
@@ -2577,7 +2577,7 @@
               t.push(
                 { provide: i, useFactory: u, deps: ne },
                 { provide: Ap, useValue: i, multi: !0 },
-                { provide: Ru, useValue: () => M(i), multi: !0 }
+                { provide: Ru, useValue: () => I(i), multi: !0 }
               );
             }
             const l = s.providers;
@@ -2760,7 +2760,7 @@
                         return !(!e || !e.useExisting);
                       })(e)
                     )
-                      r = () => M(L(e.useExisting));
+                      r = () => I(L(e.useExisting));
                     else {
                       const i = L(e && (e.useClass || e.provide));
                       if (
@@ -3417,7 +3417,7 @@
       }
       const H = {};
       function se(e) {
-        _g(Z(), v(), nt() + e, !1);
+        _g(Y(), v(), nt() + e, !1);
       }
       function _g(e, t, n, r) {
         if (!r)
@@ -3454,14 +3454,14 @@
         return (
           (e.THROW_IF_NOT_FOUND = Zi),
           (e.NULL = new Rp()),
-          (e.ɵprov = k({ token: e, providedIn: "any", factory: () => M(Mp) })),
+          (e.ɵprov = k({ token: e, providedIn: "any", factory: () => I(Mp) })),
           (e.__NG_ELEMENT_ID__ = -1),
           e
         );
       })();
-      function I(e, t = P.Default) {
+      function T(e, t = P.Default) {
         const n = v();
-        return null === n ? M(e, t) : Qh(Re(), n, L(e), t);
+        return null === n ? I(e, t) : Qh(Re(), n, L(e), t);
       }
       function uc() {
         throw new Error("invalid");
@@ -3982,7 +3982,7 @@
       function Xg(e, t, n, r, i) {
         e.data[r] = i;
         const s = i.factory || (i.factory = lr(i.type)),
-          o = new Ui(s, Gt(i), I);
+          o = new Ui(s, Gt(i), T);
         (e.blueprint[r] = o),
           (n[r] = o),
           Qg(e, t, 0, r, oi(e, n, i.hostVars, H), i);
@@ -4495,7 +4495,7 @@
       }
       function ue(e, t, n, r, i, s, o, a) {
         const l = v(),
-          u = Z(),
+          u = Y(),
           c = e + 22,
           d = u.firstCreatePass
             ? (function O0(e, t, n, r, i, s, o, a, l) {
@@ -4530,7 +4530,7 @@
           Eo(d) && wc(u, l, d),
           null != o && Ec(l, d, a);
       }
-      function J(e, t, n) {
+      function Z(e, t, n) {
         const r = v();
         return (
           qe(r, $r(), t) &&
@@ -4559,7 +4559,7 @@
                   (i = null != o ? o(i, t.value || "", r) : i),
                   s.setProperty(l, r, i));
             })(
-              Z(),
+              Y(),
               (function De() {
                 const e = B.lFrame;
                 return tu(e.tView, e.selectedIndex);
@@ -4571,16 +4571,16 @@
               n,
               !1
             ),
-          J
+          Z
         );
       }
       function Fc(e, t, n, r, i) {
         const o = i ? "class" : "style";
         Rc(e, n, t.inputs[o], o, r);
       }
-      function S(e, t, n, r) {
+      function M(e, t, n, r) {
         const i = v(),
-          s = Z(),
+          s = Y(),
           o = 22 + e,
           a = i[W],
           l = (i[o] = Ju(
@@ -4621,7 +4621,7 @@
           })(),
           Eo(u) && (wc(s, i, u), Ug(s, u, i)),
           null !== r && Ec(i, u),
-          S
+          M
         );
       }
       function A() {
@@ -4631,7 +4631,7 @@
         !(function mC() {
           B.lFrame.elementDepthCount--;
         })();
-        const n = Z();
+        const n = Y();
         return (
           n.firstCreatePass && (To(n, e), Yl(e) && n.queries.elementEnd(e)),
           null != t.classesWithoutHost &&
@@ -4647,12 +4647,12 @@
           A
         );
       }
-      function ge(e, t, n, r) {
-        return S(e, t, n, r), A(), ge;
+      function pe(e, t, n, r) {
+        return M(e, t, n, r), A(), pe;
       }
       function aa(e, t, n) {
         const r = v(),
-          i = Z(),
+          i = Y(),
           s = e + 22,
           o = i.firstCreatePass
             ? (function k0(e, t, n, r, i) {
@@ -4679,7 +4679,7 @@
       }
       function la() {
         let e = Re();
-        const t = Z();
+        const t = Y();
         return (
           ru() ? iu() : ((e = e.parent), sn(e, !1)),
           t.firstCreatePass && (To(t, e), Yl(e) && t.queries.elementEnd(e)),
@@ -4697,7 +4697,7 @@
       };
       function Un(e, t, n, r) {
         const i = v(),
-          s = Z(),
+          s = Y(),
           o = Re();
         return (
           (function Em(e, t, n, r, i, s, o, a) {
@@ -4746,9 +4746,9 @@
               const m = g.length;
               if (m)
                 for (let _ = 0; _ < m; _ += 2) {
-                  const Y = t[g[_]][g[_ + 1]].subscribe(s),
+                  const Q = t[g[_]][g[_ + 1]].subscribe(s),
                     ye = f.length;
-                  f.push(s, Y), c && c.push(i, r.index, ye, -(ye + 1));
+                  f.push(s, Q), c && c.push(i, r.index, ye, -(ye + 1));
                 }
             }
           })(s, i, i[W], o, e, t, 0, r),
@@ -4814,7 +4814,7 @@
       }
       function pr(e, t = 0, n) {
         const r = v(),
-          i = Z(),
+          i = Y(),
           s = si(i, 22 + e, 16, null, n || null);
         null === s.projection && (s.projection = t),
           iu(),
@@ -4938,7 +4938,7 @@
         return (
           (function Yt(e, t, n, r) {
             const i = v(),
-              s = Z(),
+              s = Y(),
               o = Dn(2);
             s.firstUpdatePass && Um(s, e, o, r),
               t !== H &&
@@ -4992,7 +4992,7 @@
           mt(e, Fm(t), !0);
       }
       function Zt(e, t, n, r) {
-        const i = Z(),
+        const i = Y(),
           s = Dn(2);
         i.firstUpdatePass && Um(i, null, s, r);
         const o = v();
@@ -5220,9 +5220,9 @@
       function qm(e, t) {
         return 0 != (e.flags & (t ? 16 : 32));
       }
-      function Q(e, t = "") {
+      function ee(e, t = "") {
         const n = v(),
-          r = Z(),
+          r = Y(),
           i = e + 22,
           s = r.firstCreatePass ? si(r, i, 1, t, null) : r.data[i],
           o = (n[i] = (function Zu(e, t) {
@@ -5353,7 +5353,7 @@
           (e.ɵprov = k({
             token: e,
             providedIn: "environment",
-            factory: () => new e(M(Bn)),
+            factory: () => new e(I(Bn)),
           })),
           e
         );
@@ -5932,7 +5932,7 @@
       }
       function zn(e) {
         const t = v(),
-          n = Z(),
+          n = Y(),
           r = Oh();
         au(r + 1);
         const i = fv(n, r);
@@ -5947,7 +5947,7 @@
         return !1;
       }
       function yr(e, t, n, r) {
-        const i = Z();
+        const i = Y();
         if (i.firstCreatePass) {
           const s = Re();
           dv(i, new av(t, n, r), s.index),
@@ -6025,7 +6025,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(wa, 8));
+            return new (n || e)(I(wa, 8));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac, providedIn: "root" })),
           e
@@ -6436,7 +6436,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(M(Se), M(fd), M(Ca));
+              return new (n || e)(I(Se), I(fd), I(Ca));
             }),
             (e.ɵprov = k({ token: e, factory: e.ɵfac })),
             e
@@ -6649,7 +6649,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(Nt));
+            return new (n || e)(I(Nt));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac, providedIn: "platform" })),
           e
@@ -6857,7 +6857,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(Se), M(Bn), M(ti));
+            return new (n || e)(I(Se), I(Bn), I(ti));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac, providedIn: "root" })),
           e
@@ -7516,7 +7516,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(M(As));
+              return new (n || e)(I(As));
             }),
             (e.ɵmod = Ze({ type: e })),
             (e.ɵinj = He({})),
@@ -7542,7 +7542,7 @@
             token: e,
             factory: function () {
               return (function dR() {
-                return M(c_);
+                return I(c_);
               })();
             },
             providedIn: "platform",
@@ -7623,13 +7623,13 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(Fe));
+            return new (n || e)(I(Fe));
           }),
           (e.ɵprov = k({
             token: e,
             factory: function () {
               return (function hR() {
-                return new c_(M(Fe));
+                return new c_(I(Fe));
               })();
             },
             providedIn: "platform",
@@ -7737,7 +7737,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(M(Dd), M(h_, 8));
+              return new (n || e)(I(Dd), I(h_, 8));
             }),
             (e.ɵprov = k({ token: e, factory: e.ɵfac, providedIn: "root" })),
             e
@@ -7798,7 +7798,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(M(Dd), M(h_, 8));
+              return new (n || e)(I(Dd), I(h_, 8));
             }),
             (e.ɵprov = k({ token: e, factory: e.ɵfac })),
             e
@@ -7903,13 +7903,13 @@
             (e.joinWithSlash = wd),
             (e.stripTrailingSlash = f_),
             (e.ɵfac = function (n) {
-              return new (n || e)(M(_r));
+              return new (n || e)(I(_r));
             }),
             (e.ɵprov = k({
               token: e,
               factory: function () {
                 return (function gR() {
-                  return new Ed(M(_r));
+                  return new Ed(I(_r));
                 })();
               },
               providedIn: "root",
@@ -8007,7 +8007,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(I(Ma), I(Rs), I(qt), I(Wo));
+            return new (n || e)(T(Ma), T(Rs), T(qt), T(Wo));
           }),
           (e.ɵdir = Ve({
             type: e,
@@ -8104,7 +8104,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(I(Jt), I(hn), I(Ma));
+            return new (n || e)(T(Jt), T(hn), T(Ma));
           }),
           (e.ɵdir = Ve({
             type: e,
@@ -8174,7 +8174,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(I(Jt), I(hn));
+            return new (n || e)(T(Jt), T(hn));
           }),
           (e.ɵdir = Ve({
             type: e,
@@ -8245,7 +8245,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(I(qt), I(Rs), I(Wo));
+              return new (n || e)(T(qt), T(Rs), T(Wo));
             }),
             (e.ɵdir = Ve({
               type: e,
@@ -8292,7 +8292,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(I(Jt));
+              return new (n || e)(T(Jt));
             }),
             (e.ɵdir = Ve({
               type: e,
@@ -8325,7 +8325,7 @@
           (e.ɵprov = k({
             token: e,
             providedIn: "root",
-            factory: () => new xN(M(Fe), window),
+            factory: () => new xN(I(Fe), window),
           })),
           e
         );
@@ -8556,7 +8556,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(za), M(Se));
+            return new (n || e)(I(za), I(Se));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac })),
           e
@@ -8632,7 +8632,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(M(Fe));
+              return new (n || e)(I(Fe));
             }),
             (e.ɵprov = k({ token: e, factory: e.ɵfac })),
             e
@@ -8707,7 +8707,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(Wa), M(Fs), M(Ms));
+            return new (n || e)(I(Wa), I(Fs), I(Ms));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac })),
           e
@@ -8868,7 +8868,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(Fe));
+            return new (n || e)(I(Fe));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac })),
           e
@@ -8958,7 +8958,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(Fe));
+            return new (n || e)(I(Fe));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac })),
           e
@@ -9066,7 +9066,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(M(q_, 12));
+              return new (n || e)(I(q_, 12));
             }),
             (e.ɵmod = Ze({ type: e })),
             (e.ɵinj = He({ providers: [...Q_, ...K_], imports: [Kn, aR] })),
@@ -9087,7 +9087,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(M(Fe));
+              return new (n || e)(I(Fe));
             }),
             (e.ɵprov = k({
               token: e,
@@ -9097,7 +9097,7 @@
                   (r = n
                     ? new n()
                     : (function wx() {
-                        return new Z_(M(Fe));
+                        return new Z_(I(Fe));
                       })()),
                   r
                 );
@@ -9118,7 +9118,7 @@
               token: e,
               factory: function (n) {
                 let r = null;
-                return (r = n ? new (n || e)() : M(tD)), r;
+                return (r = n ? new (n || e)() : I(tD)), r;
               },
               providedIn: "root",
             })),
@@ -9185,7 +9185,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(M(Fe));
+              return new (n || e)(I(Fe));
             }),
             (e.ɵprov = k({
               token: e,
@@ -9196,7 +9196,7 @@
                     ? new n()
                     : (function Mx(e) {
                         return new tD(e.get(Fe));
-                      })(M(Nt))),
+                      })(I(Nt))),
                   r
                 );
               },
@@ -10982,16 +10982,16 @@
             y = new Map(),
             E = "void" === i,
             j = { params: QP(g, f), delay: this.ast.options?.delay },
-            Y = c ? [] : cf(t, n, this.ast.animation, s, o, p, m, j, u, d);
+            Q = c ? [] : cf(t, n, this.ast.animation, s, o, p, m, j, u, d);
           let ye = 0;
           if (
-            (Y.forEach((Ct) => {
+            (Q.forEach((Ct) => {
               ye = Math.max(Ct.duration + Ct.delay, ye);
             }),
             d.length)
           )
             return AD(n, this._triggerName, r, i, E, p, m, [], [], w, y, ye, d);
-          Y.forEach((Ct) => {
+          Q.forEach((Ct) => {
             const bt = Ct.element,
               Pi = Dt(w, bt, new Set());
             Ct.preStyleProps.forEach((rn) => Pi.add(rn));
@@ -11000,7 +11000,7 @@
               bt !== n && _.add(bt);
           });
           const Et = Xa(_.values());
-          return AD(n, this._triggerName, r, i, E, p, m, Y, Et, w, y, ye);
+          return AD(n, this._triggerName, r, i, E, p, m, Q, Et, w, y, ye);
         }
       }
       function QP(e, t) {
@@ -11827,9 +11827,9 @@
             l = new Map(),
             u = new Map(),
             c = new Set();
-          this.disabledNodes.forEach((T) => {
-            c.add(T);
-            const N = this.driver.query(T, ".ng-animate-queued", !0);
+          this.disabledNodes.forEach((S) => {
+            c.add(S);
+            const N = this.driver.query(S, ".ng-animate-queued", !0);
             for (let F = 0; F < N.length; F++) c.add(N[F]);
           });
           const d = this.bodyNode,
@@ -11837,15 +11837,15 @@
             h = LD(f, this.collectedEnterElements),
             p = new Map();
           let g = 0;
-          h.forEach((T, N) => {
+          h.forEach((S, N) => {
             const F = ef + g++;
-            p.set(N, F), T.forEach((X) => kt(X, F));
+            p.set(N, F), S.forEach((J) => kt(J, F));
           });
           const m = [],
             _ = new Set(),
             w = new Set();
-          for (let T = 0; T < this.collectedLeaveElements.length; T++) {
-            const N = this.collectedLeaveElements[T],
+          for (let S = 0; S < this.collectedLeaveElements.length; S++) {
+            const N = this.collectedLeaveElements[S],
               F = N[Lt];
             F &&
               F.setForRemoval &&
@@ -11854,35 +11854,35 @@
               F.hasAnimation
                 ? this.driver
                     .query(N, ".ng-star-inserted", !0)
-                    .forEach((X) => _.add(X))
+                    .forEach((J) => _.add(J))
                 : w.add(N));
           }
           const y = new Map(),
             E = LD(f, Array.from(_));
-          E.forEach((T, N) => {
+          E.forEach((S, N) => {
             const F = Ka + g++;
-            y.set(N, F), T.forEach((X) => kt(X, F));
+            y.set(N, F), S.forEach((J) => kt(J, F));
           }),
             t.push(() => {
-              h.forEach((T, N) => {
+              h.forEach((S, N) => {
                 const F = p.get(N);
-                T.forEach((X) => bi(X, F));
+                S.forEach((J) => bi(J, F));
               }),
-                E.forEach((T, N) => {
+                E.forEach((S, N) => {
                   const F = y.get(N);
-                  T.forEach((X) => bi(X, F));
+                  S.forEach((J) => bi(J, F));
                 }),
-                m.forEach((T) => {
-                  this.processLeaveNode(T);
+                m.forEach((S) => {
+                  this.processLeaveNode(S);
                 });
             });
           const j = [],
-            Y = [];
-          for (let T = this._namespaceList.length - 1; T >= 0; T--)
-            this._namespaceList[T].drainQueuedTransitions(n).forEach((F) => {
-              const X = F.player,
+            Q = [];
+          for (let S = this._namespaceList.length - 1; S >= 0; S--)
+            this._namespaceList[S].drainQueuedTransitions(n).forEach((F) => {
+              const J = F.player,
                 Le = F.element;
-              if ((j.push(X), this.collectedEnterElements.length)) {
+              if ((j.push(J), this.collectedEnterElements.length)) {
                 const Ye = Le[Lt];
                 if (Ye && Ye.setForMove) {
                   if (
@@ -11896,25 +11896,25 @@
                       (Fl.value = Nr), Bt.set(F.triggerName, Fl);
                     }
                   }
-                  return void X.destroy();
+                  return void J.destroy();
                 }
               }
               const mn = !d || !this.driver.containsElement(d, Le),
                 St = y.get(Le),
                 nr = p.get(Le),
                 ve = this._buildInstruction(F, r, nr, St, mn);
-              if (ve.errors && ve.errors.length) return void Y.push(ve);
+              if (ve.errors && ve.errors.length) return void Q.push(ve);
               if (mn)
                 return (
-                  X.onStart(() => wr(Le, ve.fromStyles)),
-                  X.onDestroy(() => pn(Le, ve.toStyles)),
-                  void i.push(X)
+                  J.onStart(() => wr(Le, ve.fromStyles)),
+                  J.onDestroy(() => pn(Le, ve.toStyles)),
+                  void i.push(J)
                 );
               if (F.isFallbackTransition)
                 return (
-                  X.onStart(() => wr(Le, ve.fromStyles)),
-                  X.onDestroy(() => pn(Le, ve.toStyles)),
-                  void i.push(X)
+                  J.onStart(() => wr(Le, ve.fromStyles)),
+                  J.onDestroy(() => pn(Le, ve.toStyles)),
+                  void i.push(J)
                 );
               const uE = [];
               ve.timelines.forEach((Ye) => {
@@ -11923,8 +11923,8 @@
               }),
                 (ve.timelines = uE),
                 r.append(Le, ve.timelines),
-                o.push({ instruction: ve, player: X, element: Le }),
-                ve.queriedElements.forEach((Ye) => Dt(a, Ye, []).push(X)),
+                o.push({ instruction: ve, player: J, element: Le }),
+                ve.queriedElements.forEach((Ye) => Dt(a, Ye, []).push(J)),
                 ve.preStyleProps.forEach((Ye, Nr) => {
                   if (Ye.size) {
                     let Bt = l.get(Nr);
@@ -11938,56 +11938,56 @@
                     Ye.forEach((Fl, nh) => Bt.add(nh));
                 });
             });
-          if (Y.length) {
-            const T = [];
-            Y.forEach((N) => {
-              T.push(
+          if (Q.length) {
+            const S = [];
+            Q.forEach((N) => {
+              S.push(
                 (function cP(e, t) {
                   return new D(3505, !1);
                 })()
               );
             }),
               j.forEach((N) => N.destroy()),
-              this.reportError(T);
+              this.reportError(S);
           }
           const ye = new Map(),
             Et = new Map();
-          o.forEach((T) => {
-            const N = T.element;
+          o.forEach((S) => {
+            const N = S.element;
             r.has(N) &&
               (Et.set(N, N),
               this._beforeAnimationBuild(
-                T.player.namespaceId,
-                T.instruction,
+                S.player.namespaceId,
+                S.instruction,
                 ye
               ));
           }),
-            i.forEach((T) => {
-              const N = T.element;
+            i.forEach((S) => {
+              const N = S.element;
               this._getPreviousPlayers(
                 N,
                 !1,
-                T.namespaceId,
-                T.triggerName,
+                S.namespaceId,
+                S.triggerName,
                 null
-              ).forEach((X) => {
-                Dt(ye, N, []).push(X), X.destroy();
+              ).forEach((J) => {
+                Dt(ye, N, []).push(J), J.destroy();
               });
             });
-          const Ct = m.filter((T) => VD(T, l, u)),
+          const Ct = m.filter((S) => VD(S, l, u)),
             bt = new Map();
-          FD(bt, this.driver, w, u, An).forEach((T) => {
-            VD(T, l, u) && Ct.push(T);
+          FD(bt, this.driver, w, u, An).forEach((S) => {
+            VD(S, l, u) && Ct.push(S);
           });
           const Pn = new Map();
-          h.forEach((T, N) => {
-            FD(Pn, this.driver, new Set(T), l, "!");
+          h.forEach((S, N) => {
+            FD(Pn, this.driver, new Set(S), l, "!");
           }),
-            Ct.forEach((T) => {
-              const N = bt.get(T),
-                F = Pn.get(T);
+            Ct.forEach((S) => {
+              const N = bt.get(S),
+                F = Pn.get(S);
               bt.set(
-                T,
+                S,
                 new Map([
                   ...Array.from(N?.entries() ?? []),
                   ...Array.from(F?.entries() ?? []),
@@ -11997,14 +11997,14 @@
           const rn = [],
             Oi = [],
             Fi = {};
-          o.forEach((T) => {
-            const { element: N, player: F, instruction: X } = T;
+          o.forEach((S) => {
+            const { element: N, player: F, instruction: J } = S;
             if (r.has(N)) {
               if (c.has(N))
                 return (
-                  F.onDestroy(() => pn(N, X.toStyles)),
+                  F.onDestroy(() => pn(N, J.toStyles)),
                   (F.disabled = !0),
-                  F.overrideTotalTime(X.totalTime),
+                  F.overrideTotalTime(J.totalTime),
                   void i.push(F)
                 );
               let Le = Fi;
@@ -12021,55 +12021,55 @@
                 }
                 nr.forEach((ve) => Et.set(ve, Le));
               }
-              const mn = this._buildAnimation(F.namespaceId, X, ye, s, Pn, bt);
+              const mn = this._buildAnimation(F.namespaceId, J, ye, s, Pn, bt);
               if ((F.setRealPlayer(mn), Le === Fi)) rn.push(F);
               else {
                 const St = this.playersByElement.get(Le);
                 St && St.length && (F.parentPlayer = Yn(St)), i.push(F);
               }
             } else
-              wr(N, X.fromStyles),
-                F.onDestroy(() => pn(N, X.toStyles)),
+              wr(N, J.fromStyles),
+                F.onDestroy(() => pn(N, J.toStyles)),
                 Oi.push(F),
                 c.has(N) && i.push(F);
           }),
-            Oi.forEach((T) => {
-              const N = s.get(T.element);
+            Oi.forEach((S) => {
+              const N = s.get(S.element);
               if (N && N.length) {
                 const F = Yn(N);
-                T.setRealPlayer(F);
+                S.setRealPlayer(F);
               }
             }),
-            i.forEach((T) => {
-              T.parentPlayer ? T.syncPlayerEvents(T.parentPlayer) : T.destroy();
+            i.forEach((S) => {
+              S.parentPlayer ? S.syncPlayerEvents(S.parentPlayer) : S.destroy();
             });
-          for (let T = 0; T < m.length; T++) {
-            const N = m[T],
+          for (let S = 0; S < m.length; S++) {
+            const N = m[S],
               F = N[Lt];
             if ((bi(N, Ka), F && F.hasAnimation)) continue;
-            let X = [];
+            let J = [];
             if (a.size) {
               let mn = a.get(N);
-              mn && mn.length && X.push(...mn);
+              mn && mn.length && J.push(...mn);
               let St = this.driver.query(N, tf, !0);
               for (let nr = 0; nr < St.length; nr++) {
                 let ve = a.get(St[nr]);
-                ve && ve.length && X.push(...ve);
+                ve && ve.length && J.push(...ve);
               }
             }
-            const Le = X.filter((mn) => !mn.destroyed);
+            const Le = J.filter((mn) => !mn.destroyed);
             Le.length ? hO(this, N, Le) : this.processLeaveNode(N);
           }
           return (
             (m.length = 0),
-            rn.forEach((T) => {
-              this.players.push(T),
-                T.onDone(() => {
-                  T.destroy();
-                  const N = this.players.indexOf(T);
+            rn.forEach((S) => {
+              this.players.push(S),
+                S.onDone(() => {
+                  S.destroy();
+                  const N = this.players.indexOf(S);
                   this.players.splice(N, 1);
                 }),
-                T.play();
+                S.play();
             }),
             rn
           );
@@ -12150,12 +12150,12 @@
                 y = s.get(g),
                 E = o.get(g),
                 j = uD(0, this._normalizer, 0, p.keyframes, y, E),
-                Y = this._buildPlayer(p, j, w);
+                Q = this._buildPlayer(p, j, w);
               if ((p.subTimeline && i && d.add(g), _)) {
                 const ye = new yf(t, a, g);
-                ye.setRealPlayer(Y), u.push(ye);
+                ye.setRealPlayer(Q), u.push(ye);
               }
-              return Y;
+              return Q;
             });
           u.forEach((p) => {
             Dt(this.playersByQueriedElement, p.element, []).push(p),
@@ -12701,7 +12701,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(us), M(Fe));
+            return new (n || e)(I(us), I(Fe));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac })),
           e
@@ -12851,7 +12851,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(us), M(ul), M(Se));
+            return new (n || e)(I(us), I(ul), I(Se));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac })),
           e
@@ -12987,7 +12987,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(Fe), M(Xd), M(ff), M(As));
+            return new (n || e)(I(Fe), I(Xd), I(ff), I(As));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac })),
           e
@@ -13209,9 +13209,7 @@
       function nn(e, t) {
         return "function" == typeof t
           ? (n) =>
-              n.pipe(
-                nn((r, i) => ke(e(r, i)).pipe(ee((s, o) => t(r, s, i, o))))
-              )
+              n.pipe(nn((r, i) => ke(e(r, i)).pipe(X((s, o) => t(r, s, i, o)))))
           : (n) => n.lift(new jO(e));
       }
       class jO {
@@ -14559,7 +14557,7 @@
             (this.data = s),
             (this.outlet = o),
             (this.component = a),
-            (this.title = this.data?.pipe(ee((u) => u[Us])) ?? R(void 0)),
+            (this.title = this.data?.pipe(X((u) => u[Us])) ?? R(void 0)),
             (this._futureSnapshot = l);
         }
         get routeConfig() {
@@ -14583,14 +14581,14 @@
         get paramMap() {
           return (
             this._paramMap ||
-              (this._paramMap = this.params.pipe(ee((t) => Ti(t)))),
+              (this._paramMap = this.params.pipe(X((t) => Ti(t)))),
             this._paramMap
           );
         }
         get queryParamMap() {
           return (
             this._queryParamMap ||
-              (this._queryParamMap = this.queryParams.pipe(ee((t) => Ti(t)))),
+              (this._queryParamMap = this.queryParams.pipe(X((t) => Ti(t)))),
             this._queryParamMap
           );
         }
@@ -14934,8 +14932,8 @@
         return (
           (e.ɵfac = function (n) {
             return new (n || e)(
-              I(Ys),
-              I(Jt),
+              T(Ys),
+              T(Jt),
               (function qi(e) {
                 return (function HC(e, t) {
                   if ("class" === t) return e.classes;
@@ -14959,8 +14957,8 @@
                   return null;
                 })(Re(), e);
               })("name"),
-              I(Sa),
-              I(Bn)
+              T(Sa),
+              T(Bn)
             );
           }),
           (e.ɵdir = Ve({
@@ -15004,7 +15002,7 @@
             decls: 1,
             vars: 0,
             template: function (n, r) {
-              1 & n && ge(0, "router-outlet");
+              1 & n && pe(0, "router-outlet");
             },
             dependencies: [Mw],
             encapsulation: 2,
@@ -15281,7 +15279,7 @@
               )
             )
           ).pipe(
-            ee((t) => {
+            X((t) => {
               for (const n of t)
                 if (!0 !== n) {
                   if (n === Cl) return Cl;
@@ -15301,7 +15299,7 @@
           Qe((t) => {
             if (Ir(t)) throw bw(0, t);
           }),
-          ee((t) => !0 === t)
+          X((t) => !0 === t)
         );
       }
       const Hf = {
@@ -15330,7 +15328,7 @@
                     })
                   ).pipe(Ni(), xw())
                 : R(!0);
-            })((r = Aw(t, r)), t, n).pipe(ee((o) => (!0 === o ? s : { ...Hf })))
+            })((r = Aw(t, r)), t, n).pipe(X((o) => (!0 === o ? s : { ...Hf })))
           : R(s);
       }
       function Uf(e, t, n) {
@@ -15472,7 +15470,7 @@
             n = new q(t.segments, t.children);
           return this.expandSegmentGroup(this.injector, this.config, n, G)
             .pipe(
-              ee((s) =>
+              X((s) =>
                 this.createUrlTree(
                   vl(s),
                   this.urlTree.queryParams,
@@ -15491,7 +15489,7 @@
         match(t) {
           return this.expandSegmentGroup(this.injector, this.config, t.root, G)
             .pipe(
-              ee((i) => this.createUrlTree(vl(i), t.queryParams, t.fragment))
+              X((i) => this.createUrlTree(vl(i), t.queryParams, t.fragment))
             )
             .pipe(
               br((i) => {
@@ -15508,7 +15506,7 @@
         }
         expandSegmentGroup(t, n, r, i) {
           return 0 === r.segments.length && r.hasChildren()
-            ? this.expandChildren(t, n, r).pipe(ee((s) => new q([], s)))
+            ? this.expandChildren(t, n, r).pipe(X((s) => new q([], s)))
             : this.expandSegment(t, r, n, r.segments, i, !0);
         }
         expandChildren(t, n, r) {
@@ -15520,7 +15518,7 @@
               const o = r.children[s],
                 a = Rw(n, s);
               return this.expandSegmentGroup(t, a, o, s).pipe(
-                ee((l) => ({ segment: l, outlet: s }))
+                X((l) => ({ segment: l, outlet: s }))
               );
             }),
             YD((s, o) => ((s[o.outlet] = o.segment), s), {}),
@@ -15602,7 +15600,7 @@
                       })
                     : this.configLoader.loadChildren(t, r)
                   ).pipe(
-                    ee(
+                    X(
                       (a) => (
                         (r._loadedRoutes = a.routes),
                         (r._loadedInjector = a.injector),
@@ -15628,7 +15626,7 @@
                               g = new q(h.segments, h.children);
                             if (0 === p.length && g.hasChildren())
                               return this.expandChildren(d, f, g).pipe(
-                                ee((y) => new q(a, y))
+                                X((y) => new q(a, y))
                               );
                             if (0 === f.length && 0 === p.length)
                               return R(new q(a, {}));
@@ -15641,7 +15639,7 @@
                               m ? G : s,
                               !0
                             ).pipe(
-                              ee((w) => new q(a.concat(w.segments), w.children))
+                              X((w) => new q(a.concat(w.segments), w.children))
                             );
                           })
                         )
@@ -15783,7 +15781,7 @@
             t,
             G
           ).pipe(
-            ee((n) => {
+            X((n) => {
               if (null === n) return null;
               const r = new Dl(
                   [],
@@ -15829,7 +15827,7 @@
             })((i) => null !== i),
             fl(null),
             ZD(),
-            ee((i) => {
+            X((i) => {
               if (null === i) return null;
               const s = Vw(i);
               return (
@@ -15885,7 +15883,7 @@
             });
           } else
             o = Pw(r, n, i, t).pipe(
-              ee(
+              X(
                 ({
                   matched: a,
                   consumedSegments: l,
@@ -15941,12 +15939,12 @@
                 );
               if (0 === p.length && h.hasChildren())
                 return this.processChildren(d, f, h).pipe(
-                  ee((m) => (null === m ? null : [new xn(l, m)]))
+                  X((m) => (null === m ? null : [new xn(l, m)]))
                 );
               if (0 === f.length && 0 === p.length) return R([new xn(l, [])]);
               const g = jt(n) === s;
               return this.processSegment(d, f, h, p, g ? G : s).pipe(
-                ee((m) => (null === m ? null : [new xn(l, m)]))
+                X((m) => (null === m ? null : [new xn(l, m)]))
               );
             })
           );
@@ -15997,7 +15995,7 @@
       function zf(e) {
         return nn((t) => {
           const n = e(t);
-          return n ? ke(n).pipe(ee(() => t)) : R(t);
+          return n ? ke(n).pipe(X(() => t)) : R(t);
         });
       }
       let Ww = (() => {
@@ -16040,7 +16038,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(M(Z_));
+              return new (n || e)(I(Z_));
             }),
             (e.ɵprov = k({ token: e, factory: e.ɵfac, providedIn: "root" })),
             e
@@ -16098,7 +16096,7 @@
               });
             this.onLoadStartListener && this.onLoadStartListener(r);
             const s = this.loadModuleFactoryOrRoutes(r.loadChildren).pipe(
-                ee((a) => {
+                X((a) => {
                   this.onLoadEndListener && this.onLoadEndListener(r);
                   let l,
                     u,
@@ -16128,7 +16126,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(Nt), M(ad));
+            return new (n || e)(I(Nt), I(ad));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac, providedIn: "root" })),
           e
@@ -16281,7 +16279,7 @@
             const r = this.events;
             return n.pipe(
               Rn((i) => 0 !== i.id),
-              ee((i) => ({
+              X((i) => ({
                 ...i,
                 extractedUrl: this.urlHandlingStrategy.extract(i.rawUrl),
               })),
@@ -16338,7 +16336,7 @@
                               (function BF(e, t, n, r, i) {
                                 return new $F(e, t, n, r, i).apply();
                               })(e, t, n, i.extractedUrl, r).pipe(
-                                ee((s) => ({ ...i, urlAfterRedirects: s }))
+                                X((s) => ({ ...i, urlAfterRedirects: s }))
                               )
                             );
                           })(
@@ -16386,7 +16384,7 @@
                                 r,
                                 i,
                                 s
-                              ).pipe(ee((a) => ({ ...o, targetSnapshot: a })))
+                              ).pipe(X((a) => ({ ...o, targetSnapshot: a })))
                             );
                           })(
                             this.ngModule.injector,
@@ -16459,7 +16457,7 @@
                     );
                     this.triggerEvent(l);
                   }),
-                  ee(
+                  X(
                     (a) =>
                       (i = {
                         ...a,
@@ -16612,7 +16610,7 @@
                                   })(r, s, e, t)
                                 : R(a)
                             ),
-                            ee((a) => ({ ...n, guardsResult: a }))
+                            X((a) => ({ ...n, guardsResult: a }))
                           );
                     });
                   })(this.ngModule.injector, (a) => this.triggerEvent(a)),
@@ -16704,7 +16702,7 @@
                                             br((o) => ($f(o) ? Si : $s(o)))
                                           );
                                         })(s, e, t, r).pipe(
-                                          ee(
+                                          X(
                                             (o) => (
                                               (e._resolvedData = o),
                                               (e.data = ww(e, n).resolve),
@@ -16758,7 +16756,7 @@
                             Qe((d) => {
                               u.component = d;
                             }),
-                            ee(() => {})
+                            X(() => {})
                           )
                         );
                       for (const d of u.children) c.push(...l(d));
@@ -16767,7 +16765,7 @@
                     return GD(l(a.targetSnapshot.root)).pipe(fl(), Hs(1));
                   }),
                   zf(() => this.afterPreactivation()),
-                  ee((a) => {
+                  X((a) => {
                     const l = (function nF(e, t, n) {
                       const r = Qs(e, t._root, n ? n._root : void 0);
                       return new _w(r, t);
@@ -16791,7 +16789,7 @@
                         (this.browserUrlTree = a.urlAfterRedirects));
                   }),
                   ((e, t, n) =>
-                    ee(
+                    X(
                       (r) => (
                         new fF(
                           t,
@@ -17181,7 +17179,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(Be), M(ad), M(Bn), M(Yw), M(Gf));
+            return new (n || e)(I(Be), I(ad), I(Bn), I(Yw), I(Gf));
           }),
           (e.ɵprov = k({ token: e, factory: e.ɵfac, providedIn: "root" })),
           e
@@ -17362,7 +17360,7 @@
         }
         return (
           (e.ɵfac = function (n) {
-            return new (n || e)(M(nE, 8));
+            return new (n || e)(I(nE, 8));
           }),
           (e.ɵmod = Ze({ type: e })),
           (e.ɵinj = He({ imports: [Vf] })),
@@ -17414,7 +17412,7 @@
                                       a instanceof _l ||
                                       a instanceof mw
                                   ),
-                                  ee(
+                                  X(
                                     (a) =>
                                       a instanceof Mr ||
                                       (a instanceof _l &&
@@ -17476,22 +17474,22 @@
       }
       const FL = ["overlay"];
       function LL(e, t) {
-        1 & e && ge(0, "div");
+        1 & e && pe(0, "div");
       }
       function kL(e, t) {
-        if ((1 & e && (S(0, "div"), ue(1, LL, 1, 0, "div", 6), A()), 2 & e)) {
+        if ((1 & e && (M(0, "div"), ue(1, LL, 1, 0, "div", 6), A()), 2 & e)) {
           const n = _t(2);
           ca(n.spinner.class),
             yi("color", n.spinner.color),
             se(1),
-            J("ngForOf", n.spinner.divArray);
+            Z("ngForOf", n.spinner.divArray);
         }
       }
       function VL(e, t) {
         1 & e &&
-          (ge(0, "div", 7),
+          (pe(0, "div", 7),
           (function nv(e, t) {
-            const n = Z();
+            const n = Y();
             let r;
             const i = e + 22;
             n.firstCreatePass
@@ -17510,7 +17508,7 @@
                   ))
               : (r = n.data[i]);
             const s = r.factory || (r.factory = lr(r.type)),
-              o = It(I);
+              o = It(T);
             try {
               const a = No(!1),
                 l = s();
@@ -17528,7 +17526,7 @@
             }
           })(1, "safeHtml")),
           2 & e &&
-            J(
+            Z(
               "innerHTML",
               (function rv(e, t, n) {
                 const r = e + 22,
@@ -17546,10 +17544,10 @@
       function jL(e, t) {
         if (
           (1 & e &&
-            (S(0, "div", 1, 2),
+            (M(0, "div", 1, 2),
             ue(2, kL, 2, 5, "div", 3),
             ue(3, VL, 2, 3, "div", 4),
-            S(4, "div", 5),
+            M(4, "div", 5),
             pr(5),
             A()()),
           2 & e)
@@ -17559,11 +17557,11 @@
             "z-index",
             n.spinner.zIndex
           )("position", n.spinner.fullScreen ? "fixed" : "absolute"),
-            J("@.disabled", n.disableAnimation)("@fadeIn", "in"),
+            Z("@.disabled", n.disableAnimation)("@fadeIn", "in"),
             se(2),
-            J("ngIf", !n.template),
+            Z("ngIf", !n.template),
             se(1),
-            J("ngIf", n.template),
+            Z("ngIf", n.template),
             se(1),
             yi("z-index", n.spinner.zIndex);
         }
@@ -17690,7 +17688,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(I(eD, 16));
+              return new (n || e)(T(eD, 16));
             }),
             (e.ɵpipe = Je({ name: "safeHtml", type: e, pure: !0 })),
             e
@@ -17815,7 +17813,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(I(sE), I(Sa), I(qt), I(oE, 8));
+              return new (n || e)(T(sE), T(Sa), T(qt), T(oE, 8));
             }),
             (e.ɵcmp = Ue({
               type: e,
@@ -17824,7 +17822,7 @@
                 if (
                   (1 & n &&
                     (function uv(e, t, n) {
-                      const r = Z();
+                      const r = Y();
                       r.firstCreatePass &&
                         (dv(r, new av(e, t, n), -1),
                         2 == (2 & t) && (r.staticViewQueries = !0)),
@@ -17884,7 +17882,7 @@
               ],
               template: function (n, r) {
                 1 & n && (vs(), ue(0, jL, 6, 12, "div", 0)),
-                  2 & n && J("ngIf", r.spinner.show);
+                  2 & n && Z("ngIf", r.spinner.show);
               },
               dependencies: [Ba, $a, HL],
               styles: [
@@ -17952,29 +17950,29 @@
               ],
               template: function (n, r) {
                 1 & n &&
-                  (S(0, "div", 0)(1, "div", 1)(2, "a", 2),
+                  (M(0, "div", 0)(1, "div", 1)(2, "a", 2),
                   Un("click", function () {
                     return r.gotoTop();
                   }),
-                  ge(3, "i", 3),
+                  pe(3, "i", 3),
                   A()(),
-                  S(4, "a", 4),
-                  Q(5, "Contact"),
+                  M(4, "a", 4),
+                  ee(5, "Contact"),
                   A(),
-                  S(6, "a", 5),
-                  Q(7, "Skills"),
+                  M(6, "a", 5),
+                  ee(7, "Skills"),
                   A(),
-                  S(8, "a", 6),
+                  M(8, "a", 6),
                   Un("click", function () {
                     return r.scroll("education");
                   }),
-                  Q(9, "Education"),
+                  ee(9, "Education"),
                   A(),
-                  S(10, "a", 7),
+                  M(10, "a", 7),
                   Un("click", function () {
                     return r.scroll("experience");
                   }),
-                  Q(11, "Experience"),
+                  ee(11, "Experience"),
                   A()());
               },
               styles: [
@@ -18005,8 +18003,8 @@
               ],
               template: function (n, r) {
                 1 & n &&
-                  (S(0, "div", 0)(1, "div", 1)(2, "p", 2),
-                  Q(3, "Created by Bruno Omizu - 2022"),
+                  (M(0, "div", 0)(1, "div", 1)(2, "p", 2),
+                  ee(3, "Created by Bruno Omizu - 2022"),
                   A()()());
               },
               styles: [
@@ -18028,7 +18026,7 @@
             (e.ɵcmp = Ue({
               type: e,
               selectors: [["app-main-page"]],
-              decls: 71,
+              decls: 61,
               vars: 0,
               consts: [
                 [1, "flex-container-main"],
@@ -18056,95 +18054,83 @@
               ],
               template: function (n, r) {
                 1 & n &&
-                  (S(0, "div", 0)(1, "div", 1),
-                  ge(2, "img", 2),
+                  (M(0, "div", 0)(1, "div", 1),
+                  pe(2, "img", 2),
                   A(),
-                  S(3, "div", 3)(4, "div", 4)(5, "h1"),
-                  Q(6, "Bruno Omizu"),
+                  M(3, "div", 3)(4, "div", 4)(5, "h1"),
+                  ee(6, "Bruno Omizu"),
                   A(),
-                  S(7, "p"),
-                  Q(8, "Solutions Architect | Technical Lead"),
+                  M(7, "p"),
+                  ee(8, "Solutions Architect | Technical Lead"),
                   A(),
-                  S(9, "p"),
-                  Q(10, "New Zealand Permanent Resident"),
+                  M(9, "p"),
+                  ee(10, "New Zealand Permanent Resident"),
                   A()(),
-                  S(11, "div", 5)(12, "div")(13, "h4")(14, "strong"),
-                  Q(15, "Phone"),
+                  M(11, "div", 5)(12, "div")(13, "h4")(14, "strong"),
+                  ee(15, "Phone"),
                   A()(),
-                  S(16, "p"),
-                  Q(17, "000 222 8877"),
+                  M(16, "p"),
+                  ee(17, "000 222 8877"),
                   A()(),
-                  S(18, "div")(19, "h4")(20, "strong"),
-                  Q(21, "Email"),
+                  M(18, "div")(19, "h4")(20, "strong"),
+                  ee(21, "Email"),
                   A()(),
-                  S(22, "p"),
-                  Q(23, "test@test.com"),
+                  M(22, "p"),
+                  ee(23, "test@test.com"),
                   A()(),
-                  S(24, "div")(25, "h4")(26, "strong"),
-                  Q(27, "Address"),
+                  M(24, "div")(25, "h4")(26, "strong"),
+                  ee(27, "Date of Birth"),
                   A()(),
-                  S(28, "p"),
-                  Q(29, "19/8 TEST TEST"),
-                  A(),
-                  S(30, "p"),
-                  Q(31, "TEST"),
-                  A(),
-                  S(32, "p"),
-                  Q(33, "TEST"),
-                  A()(),
-                  S(34, "div")(35, "h4")(36, "strong"),
-                  Q(37, "Date of Birth"),
-                  A()(),
-                  S(38, "p"),
-                  Q(39, "November 12th, 1985"),
+                  M(28, "p"),
+                  ee(29, "November 12th, 1985"),
                   A()()()()(),
-                  S(40, "div", 6)(41, "div", 7)(42, "div", 8)(43, "a", 9),
-                  ge(44, "i", 10),
+                  M(30, "div", 6)(31, "div", 7)(32, "div", 8)(33, "a", 9),
+                  pe(34, "i", 10),
                   A()(),
-                  S(45, "div", 8)(46, "a", 11),
-                  ge(47, "i", 12),
+                  M(35, "div", 8)(36, "a", 11),
+                  pe(37, "i", 12),
                   A()(),
-                  S(48, "div", 8)(49, "a", 13),
-                  ge(50, "i", 14),
+                  M(38, "div", 8)(39, "a", 13),
+                  pe(40, "i", 14),
                   A()(),
-                  S(51, "div", 8)(52, "a", 15),
-                  ge(53, "i", 16),
+                  M(41, "div", 8)(42, "a", 15),
+                  pe(43, "i", 16),
                   A()()()(),
-                  S(54, "div", 17)(55, "div", 18)(56, "div", 19)(57, "span"),
-                  Q(58, "Hello, I'm Bruno"),
+                  M(44, "div", 17)(45, "div", 18)(46, "div", 19)(47, "span"),
+                  ee(48, "Hello, I'm Bruno"),
                   A()(),
-                  S(59, "p"),
-                  Q(
-                    60,
+                  M(49, "p"),
+                  ee(
+                    50,
                     " I am a Solutions Architect with over 15 years of experience with Software Engineering, Integration, Cloud and DevOps. My passion is to work with technology and understand how it works and what we can do with it. "
                   ),
                   A(),
-                  S(61, "p"),
-                  Q(
-                    62,
+                  M(51, "p"),
+                  ee(
+                    52,
                     " As part of my learning journey, I have built this CV webpage using "
                   ),
-                  S(63, "a", 20),
-                  Q(64, "Angular 14"),
+                  M(53, "a", 20),
+                  ee(54, "Angular 14"),
                   A(),
-                  Q(65, " and "),
-                  S(66, "a", 21),
-                  Q(67, "PrimeNg"),
+                  ee(55, " and "),
+                  M(56, "a", 21),
+                  ee(57, "PrimeNg"),
                   A(),
-                  Q(
-                    68,
+                  ee(
+                    58,
                     " components as a experiment to improve my front-end skills. You can find the full code for this website on my GitHub repository (link above). I hope you find the information required to get me a good job in your company :) "
                   ),
                   A(),
-                  S(69, "p"),
-                  Q(
-                    70,
+                  M(59, "p"),
+                  ee(
+                    60,
                     " I have a preference for permanent roles and remote (or hybrid / twice a week in the office is fine too). I can also provide references, you just have to request it "
                   ),
                   A()()());
               },
               styles: [
-                ".flex-container-main[_ngcontent-%COMP%]{display:flex;flex-direction:row;background-color:#eaecee;width:100%;height:auto;position:relative;overflow:hidden}a[_ngcontent-%COMP%]{color:inherit}.image[_ngcontent-%COMP%]{display:block;margin-top:80px;height:350px;width:350px;margin-left:auto;margin-right:0}img[_ngcontent-%COMP%]{height:100%;width:100%;object-fit:contain}.details[_ngcontent-%COMP%]{display:block;margin-top:80px;margin-left:0;margin-right:auto;height:350px;width:348px;background-color:#fff;font-size:14px;padding-left:15px;border:1px solid lightgrey}.details-header[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{margin-bottom:0}.details-header[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-top:0;margin-bottom:0}.details-contact[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]{margin-top:14px;margin-bottom:0}.details-contact[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-top:0;margin-bottom:0;font-size:13px}.flex-container-social-main[_ngcontent-%COMP%]{display:flex;flex-direction:row;width:100%;height:auto;position:relative;overflow:hidden}.flex-container-social-box[_ngcontent-%COMP%]{align-items:center;justify-content:center;display:flex;flex-direction:row;flex-wrap:wrap;width:100%;height:auto;background-color:#85929e;margin:1px auto;width:698px;padding:10px;font-size:30px}.flex-container-social-item[_ngcontent-%COMP%]{align-items:center;justify-content:center;margin:5px;padding:5px;height:42px;width:42px}.flex-container-intro[_ngcontent-%COMP%]{display:flex;flex-direction:row;width:100%;height:auto;position:relative;overflow:hidden}.flex-container-intro-box[_ngcontent-%COMP%]{align-items:center;justify-content:center;display:flex;flex-direction:row;flex-wrap:wrap;width:100%;margin:50px auto;width:675px;padding:20px;line-height:1.5em;font-size:15px}.flex-container-intro[_ngcontent-%COMP%]   .intro-hello[_ngcontent-%COMP%]{font-size:20px;margin-top:10px;margin-bottom:5px}.flex-container-intro-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-top:20px;margin-left:35px;margin-right:35px}",
+                ".flex-container-main[_ngcontent-%COMP%]{display:flex;flex-direction:row;background-color:#eaecee;width:100%;height:auto;position:relative;overflow:hidden}a[_ngcontent-%COMP%]{color:inherit}.image[_ngcontent-%COMP%]{display:block;margin-top:80px;height:350px;width:350px;margin-left:auto;margin-right:0}img[_ngcontent-%COMP%]{height:100%;width:100%;object-fit:contain}.details[_ngcontent-%COMP%]{display:block;margin-top:80px;margin-left:0;margin-right:auto;height:350px;width:348px;background-color:#ebedef;font-size:14px;padding-left:15px;border:1px solid lightgrey}.details-header[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%]{margin-bottom:0}.details-header[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-top:0;margin-bottom:0}.details-contact[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]{margin-top:14px;margin-bottom:0}.details-contact[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-top:0;margin-bottom:0;font-size:13px}.flex-container-social-main[_ngcontent-%COMP%]{display:flex;flex-direction:row;width:100%;height:auto;position:relative;overflow:hidden}.flex-container-social-box[_ngcontent-%COMP%]{align-items:center;justify-content:center;display:flex;flex-direction:row;flex-wrap:wrap;width:100%;height:auto;background-color:#85929e;margin:1px auto;width:698px;padding:10px;font-size:30px}.flex-container-social-item[_ngcontent-%COMP%]{align-items:center;justify-content:center;margin:5px;padding:5px;height:42px;width:42px}.flex-container-intro[_ngcontent-%COMP%]{display:flex;flex-direction:row;width:100%;height:auto;position:relative;overflow:hidden}.flex-container-intro-box[_ngcontent-%COMP%]{align-items:center;justify-content:center;display:flex;flex-direction:row;flex-wrap:wrap;width:100%;margin:50px auto;width:675px;padding:20px;line-height:1.5em;font-size:15px}.flex-container-intro[_ngcontent-%COMP%]   .intro-hello[_ngcontent-%COMP%]{font-size:20px;margin-top:10px;margin-bottom:5px}.flex-container-intro-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-top:20px;margin-left:35px;margin-right:35px}",
               ],
             })),
             e
@@ -18444,7 +18430,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(I(hn));
+              return new (n || e)(T(hn));
             }),
             (e.ɵdir = Ve({
               type: e,
@@ -18471,11 +18457,11 @@
       function ZL(e, t) {
         if (
           (1 & e &&
-            (S(0, "div", 8), pr(1, 1), ue(2, YL, 1, 0, "ng-container", 6), A()),
+            (M(0, "div", 8), pr(1, 1), ue(2, YL, 1, 0, "ng-container", 6), A()),
           2 & e)
         ) {
           const n = _t();
-          se(2), J("ngTemplateOutlet", n.headerTemplate);
+          se(2), Z("ngTemplateOutlet", n.headerTemplate);
         }
       }
       function JL(e, t) {
@@ -18484,14 +18470,14 @@
       function XL(e, t) {
         if (
           (1 & e &&
-            (S(0, "div", 9), Q(1), ue(2, JL, 1, 0, "ng-container", 6), A()),
+            (M(0, "div", 9), ee(1), ue(2, JL, 1, 0, "ng-container", 6), A()),
           2 & e)
         ) {
           const n = _t();
           se(1),
             Ds(" ", n.header, " "),
             se(1),
-            J("ngTemplateOutlet", n.titleTemplate);
+            Z("ngTemplateOutlet", n.titleTemplate);
         }
       }
       function ek(e, t) {
@@ -18500,14 +18486,14 @@
       function tk(e, t) {
         if (
           (1 & e &&
-            (S(0, "div", 10), Q(1), ue(2, ek, 1, 0, "ng-container", 6), A()),
+            (M(0, "div", 10), ee(1), ue(2, ek, 1, 0, "ng-container", 6), A()),
           2 & e)
         ) {
           const n = _t();
           se(1),
             Ds(" ", n.subheader, " "),
             se(1),
-            J("ngTemplateOutlet", n.subtitleTemplate);
+            Z("ngTemplateOutlet", n.subtitleTemplate);
         }
       }
       function nk(e, t) {
@@ -18519,14 +18505,14 @@
       function ik(e, t) {
         if (
           (1 & e &&
-            (S(0, "div", 11),
+            (M(0, "div", 11),
             pr(1, 2),
             ue(2, rk, 1, 0, "ng-container", 6),
             A()),
           2 & e)
         ) {
           const n = _t();
-          se(2), J("ngTemplateOutlet", n.footerTemplate);
+          se(2), Z("ngTemplateOutlet", n.footerTemplate);
         }
       }
       const sk = ["*", [["p-header"]], [["p-footer"]]],
@@ -18563,7 +18549,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(I(qt));
+              return new (n || e)(T(qt));
             }),
             (e.ɵcmp = Ue({
               type: e,
@@ -18605,12 +18591,12 @@
               template: function (n, r) {
                 1 & n &&
                   (vs(sk),
-                  S(0, "div", 0),
+                  M(0, "div", 0),
                   ue(1, ZL, 3, 1, "div", 1),
-                  S(2, "div", 2),
+                  M(2, "div", 2),
                   ue(3, XL, 3, 2, "div", 3),
                   ue(4, tk, 3, 2, "div", 4),
-                  S(5, "div", 5),
+                  M(5, "div", 5),
                   pr(6),
                   ue(7, nk, 1, 0, "ng-container", 6),
                   A(),
@@ -18618,17 +18604,17 @@
                   A()()),
                   2 & n &&
                     (ca(r.styleClass),
-                    J("ngClass", "p-card p-component")("ngStyle", r.style),
+                    Z("ngClass", "p-card p-component")("ngStyle", r.style),
                     se(1),
-                    J("ngIf", r.headerFacet || r.headerTemplate),
+                    Z("ngIf", r.headerFacet || r.headerTemplate),
                     se(2),
-                    J("ngIf", r.header || r.titleTemplate),
+                    Z("ngIf", r.header || r.titleTemplate),
                     se(1),
-                    J("ngIf", r.subheader || r.subtitleTemplate),
+                    Z("ngIf", r.subheader || r.subtitleTemplate),
                     se(3),
-                    J("ngTemplateOutlet", r.contentTemplate),
+                    Z("ngTemplateOutlet", r.contentTemplate),
                     se(1),
-                    J("ngIf", r.footerFacet || r.footerTemplate));
+                    Z("ngIf", r.footerFacet || r.footerTemplate));
               },
               dependencies: [ja, $a, Fd, Od],
               styles: [".p-card-header img{width:100%}\n"],
@@ -18665,17 +18651,17 @@
           const n = _t().$implicit,
             r = _t();
           se(1),
-            J("ngTemplateOutlet", r.markerTemplate)(
+            Z("ngTemplateOutlet", r.markerTemplate)(
               "ngTemplateOutletContext",
               ya(2, th, n)
             );
         }
       }
       function dk(e, t) {
-        1 & e && ge(0, "div", 10);
+        1 & e && pe(0, "div", 10);
       }
       function fk(e, t) {
-        1 & e && ge(0, "div", 11);
+        1 & e && pe(0, "div", 11);
       }
       function hk(e, t) {
         1 & e && dn(0);
@@ -18683,15 +18669,15 @@
       function pk(e, t) {
         if (
           (1 & e &&
-            (S(0, "div", 2)(1, "div", 3),
+            (M(0, "div", 2)(1, "div", 3),
             ue(2, lk, 1, 0, "ng-container", 4),
             A(),
-            S(3, "div", 5),
+            M(3, "div", 5),
             ue(4, ck, 2, 4, "ng-container", 6),
             ue(5, dk, 1, 0, "ng-template", null, 7, hv),
             ue(7, fk, 1, 0, "div", 8),
             A(),
-            S(8, "div", 9),
+            M(8, "div", 9),
             ue(9, hk, 1, 0, "ng-container", 4),
             A()()),
           2 & e)
@@ -18708,16 +18694,16 @@
             })(6),
             s = _t();
           se(2),
-            J("ngTemplateOutlet", s.oppositeTemplate)(
+            Z("ngTemplateOutlet", s.oppositeTemplate)(
               "ngTemplateOutletContext",
               ya(7, th, n)
             ),
             se(2),
-            J("ngIf", s.markerTemplate)("ngIfElse", i),
+            Z("ngIf", s.markerTemplate)("ngIfElse", i),
             se(3),
-            J("ngIf", !r),
+            Z("ngIf", !r),
             se(2),
-            J("ngTemplateOutlet", s.contentTemplate)(
+            Z("ngTemplateOutlet", s.contentTemplate)(
               "ngTemplateOutletContext",
               ya(9, th, n)
             );
@@ -18760,7 +18746,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(I(qt));
+              return new (n || e)(T(qt));
             }),
             (e.ɵcmp = Ue({
               type: e,
@@ -18796,10 +18782,10 @@
                 [1, "p-timeline-event-connector"],
               ],
               template: function (n, r) {
-                1 & n && (S(0, "div", 0), ue(1, pk, 10, 11, "div", 1), A()),
+                1 & n && (M(0, "div", 0), ue(1, pk, 10, 11, "div", 1), A()),
                   2 & n &&
                     (ca(r.styleClass),
-                    J("ngStyle", r.style)(
+                    Z("ngStyle", r.style)(
                       "ngClass",
                       Yy(
                         5,
@@ -18814,7 +18800,7 @@
                       )
                     ),
                     se(1),
-                    J("ngForOf", r.value));
+                    Z("ngForOf", r.value));
               },
               dependencies: [ja, Ba, $a, Fd, Od],
               styles: [
@@ -18838,29 +18824,29 @@
           );
         })();
       function vk(e, t) {
-        if ((1 & e && (S(0, "span"), ge(1, "i", 6), A()), 2 & e)) {
+        if ((1 & e && (M(0, "span"), pe(1, "i", 6), A()), 2 & e)) {
           const n = t.$implicit;
-          se(1), yi("color", n.color), J("ngClass", n.icon);
+          se(1), yi("color", n.color), Z("ngClass", n.icon);
         }
       }
       function _k(e, t) {
-        if ((1 & e && (S(0, "a", 10), ge(1, "img", 11), A()), 2 & e)) {
+        if ((1 & e && (M(0, "a", 10), pe(1, "img", 11), A()), 2 & e)) {
           const n = _t().$implicit;
-          J("href", n.url, os), se(1), J("alt", n.company)("src", n.image, os);
+          Z("href", n.url, os), se(1), Z("alt", n.company)("src", n.image, os);
         }
       }
       function Dk(e, t) {
         if (
           (1 & e &&
-            (S(0, "p-card", 7),
+            (M(0, "p-card", 7),
             ue(1, _k, 2, 3, "ng-template", 8),
-            S(2, "p", 9),
-            Q(3),
+            M(2, "p", 9),
+            ee(3),
             A()()),
           2 & e)
         ) {
           const n = t.$implicit;
-          J("header", n.company)("subheader", n.date), se(3), Vc(n.description);
+          Z("header", n.company)("subheader", n.date), se(3), Vc(n.description);
         }
       }
       let wk = (() => {
@@ -18949,10 +18935,10 @@
                 "width",
                 "25%",
                 "margin-left",
-                "2%",
-                "margin-top",
-                "2%",
+                "1%",
                 "margin-right",
+                "1%",
+                "margin-top",
                 "2%",
                 3,
                 "alt",
@@ -18961,27 +18947,27 @@
             ],
             template: function (n, r) {
               1 & n &&
-                (S(0, "div", 0),
-                ge(1, "i", 1),
-                S(2, "h3"),
-                Q(3, "EXPERIENCE"),
+                (M(0, "div", 0),
+                pe(1, "i", 1),
+                M(2, "h3"),
+                ee(3, "EXPERIENCE"),
                 A()(),
-                S(4, "div", 2)(5, "p-timeline", 3),
+                M(4, "div", 2)(5, "p-timeline", 3),
                 ue(6, vk, 2, 3, "ng-template", 4),
                 ue(7, Dk, 4, 3, "ng-template", 5),
                 A()()),
-                2 & n && (se(5), J("value", r.events));
+                2 & n && (se(5), Z("value", r.events));
             },
             dependencies: [ja, eh, Ol, mk],
             styles: [
-              ".flex-container-experience-box[_ngcontent-%COMP%]{width:100%;margin-left:auto;margin-right:auto}",
+              ".flex-container-experience-box[_ngcontent-%COMP%]{width:100%;padding:30px 150px;background-color:#ebedef}",
             ],
           })),
           e
         );
       })();
       function Ek(e, t) {
-        1 & e && (S(0, "a", 5), ge(1, "img", 6), A());
+        1 & e && (M(0, "a", 6), pe(1, "img", 7), A());
       }
       const Ck = function () {
         return { width: "48%", "margin-left": "auto", "margin-right": "auto" };
@@ -18998,11 +18984,12 @@
           (e.ɵcmp = Ue({
             type: e,
             selectors: [["app-education"]],
-            decls: 9,
+            decls: 10,
             vars: 3,
             consts: [
               ["id", "education", 1, "flex-container-header"],
               [1, "pi", "pi-book", 2, "font-size", "24px"],
+              [1, "spacing"],
               [1, "flex-container-education-box"],
               [
                 "header",
@@ -19026,45 +19013,46 @@
             ],
             template: function (n, r) {
               1 & n &&
-                (S(0, "div", 0),
-                ge(1, "i", 1),
-                S(2, "h3"),
-                Q(3, "EDUCATION"),
+                (M(0, "div", 0),
+                pe(1, "i", 1),
+                M(2, "h3"),
+                ee(3, "EDUCATION"),
                 A()(),
-                S(4, "div", 2)(5, "p-card", 3),
-                ue(6, Ek, 2, 0, "ng-template", 4),
-                S(7, "p"),
-                Q(
-                  8,
+                pe(4, "div", 2),
+                M(5, "div", 3)(6, "p-card", 4),
+                ue(7, Ek, 2, 0, "ng-template", 5),
+                M(8, "p"),
+                ee(
+                  9,
                   " Relevant Modules: Algorithmics, Systems Programming, Professional Software Development, Advanced Networks and Operating Systems "
                 ),
                 A()()()),
-                2 & n && (se(5), Pt(qc(2, Ck)));
+                2 & n && (se(6), Pt(qc(2, Ck)));
             },
             dependencies: [eh, Ol],
             styles: [
-              ".flex-container-experience-box[_ngcontent-%COMP%]{margin-left:auto;margin-right:auto;display:flex;flex-direction:row;align-items:center;justify-content:center}",
+              ".flex-container-education-box[_ngcontent-%COMP%]{padding-top:30px;padding-bottom:30px;margin-left:auto;margin-right:auto;display:flex;flex-direction:row;align-items:center;justify-content:center;background-color:#ebedef}",
             ],
           })),
           e
         );
       })();
       function Sk(e, t) {
-        1 & e && ge(0, "i", 6);
+        1 & e && pe(0, "i", 6);
       }
       const Tk = function () {
         return { "text-align": "center" };
       };
       function Ik(e, t) {
         if (
-          (1 & e && (S(0, "p-card", 4), ue(1, Sk, 1, 0, "i", 5), A()), 2 & e)
+          (1 & e && (M(0, "p-card", 4), ue(1, Sk, 1, 0, "i", 5), A()), 2 & e)
         ) {
           const n = t.$implicit,
             r = _t();
           Pt(qc(5, Tk)),
-            J("header", n.name)("subheader", n.description),
+            Z("header", n.name)("subheader", n.description),
             se(1),
-            J("ngForOf", r.starsArray(n.stars));
+            Z("ngForOf", r.starsArray(n.stars));
         }
       }
       let Mk = (() => {
@@ -19147,19 +19135,19 @@
               ],
               template: function (n, r) {
                 1 & n &&
-                  (S(0, "div", 0),
-                  ge(1, "i", 1),
-                  S(2, "h3"),
-                  Q(3, "SKILLS"),
+                  (M(0, "div", 0),
+                  pe(1, "i", 1),
+                  M(2, "h3"),
+                  ee(3, "SKILLS"),
                   A()(),
-                  S(4, "div", 2),
+                  M(4, "div", 2),
                   ue(5, Ik, 2, 6, "p-card", 3),
                   A()),
-                  2 & n && (se(5), J("ngForOf", r.skills));
+                  2 & n && (se(5), Z("ngForOf", r.skills));
               },
               dependencies: [Ba, eh],
               styles: [
-                ".flex-container-skills-box[_ngcontent-%COMP%]{margin-left:400px;margin-right:400px;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center}p-card[_ngcontent-%COMP%]{width:300px;margin:10px}",
+                ".flex-container-skills-box[_ngcontent-%COMP%]{width:100%;display:flex;flex-direction:row;flex-wrap:wrap;background-color:#ebedef;padding:20px 250px;align-items:center;justify-content:center}p-card[_ngcontent-%COMP%]{width:250px;margin:15px}",
               ],
             })),
             e
@@ -19184,10 +19172,10 @@
               ],
               template: function (n, r) {
                 1 & n &&
-                  (S(0, "div", 0),
-                  ge(1, "i", 1),
-                  S(2, "h3"),
-                  Q(3, "CONTACT"),
+                  (M(0, "div", 0),
+                  pe(1, "i", 1),
+                  M(2, "h3"),
+                  ee(3, "CONTACT"),
                   A()());
               },
               styles: [
@@ -19211,7 +19199,7 @@
           }
           return (
             (e.ɵfac = function (n) {
-              return new (n || e)(I(sE));
+              return new (n || e)(T(sE));
             }),
             (e.ɵcmp = Ue({
               type: e,
@@ -19236,15 +19224,15 @@
               ],
               template: function (n, r) {
                 1 & n &&
-                  (S(0, "ngx-spinner", 0)(1, "p", 1),
-                  Q(2, "Loading..."),
+                  (M(0, "ngx-spinner", 0)(1, "p", 1),
+                  ee(2, "Loading..."),
                   A()(),
-                  ge(3, "app-header")(4, "app-main-page"),
-                  S(5, "section", 2),
-                  ge(6, "app-experience")(7, "app-education"),
+                  pe(3, "app-header")(4, "app-main-page"),
+                  M(5, "section", 2),
+                  pe(6, "app-experience")(7, "app-education"),
                   A(),
-                  ge(8, "app-skills")(9, "app-contact")(10, "app-footer")),
-                  2 & n && J("fullScreen", !0);
+                  pe(8, "app-skills")(9, "app-contact")(10, "app-footer")),
+                  2 & n && Z("fullScreen", !0);
               },
               dependencies: [UL, WL, GL, qL, wk, bk, Mk, Ak],
             })),
