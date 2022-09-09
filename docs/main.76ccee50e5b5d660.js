@@ -18974,7 +18974,7 @@
             },
             dependencies: [ja, eh, Ol, mk],
             styles: [
-              ".flex-container-experience-box[_ngcontent-%COMP%]{width:50%;margin-left:auto;margin-right:auto}",
+              ".flex-container-experience-box[_ngcontent-%COMP%]{width:80%;margin-left:auto;margin-right:auto}",
             ],
           })),
           e
