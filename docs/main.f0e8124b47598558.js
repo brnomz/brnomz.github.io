@@ -19137,7 +19137,7 @@
               },
               dependencies: [Ba, eh],
               styles: [
-                ".flex-container-skills-box[_ngcontent-%COMP%]{width:100%;display:flex;flex-direction:row;flex-wrap:wrap;background-color:#ebedef;padding:20px 250px;align-items:center;justify-content:center}p-card[_ngcontent-%COMP%]{width:250px;margin:15px}",
+                ".flex-container-skills-box[_ngcontent-%COMP%]{padding-top:20px;padding-bottom:20px;width:100%;display:flex;flex-direction:row;flex-wrap:wrap;background-color:#ebedef;align-items:center;justify-content:center}p-card[_ngcontent-%COMP%]{width:250px;margin:15px}",
               ],
             })),
             e
