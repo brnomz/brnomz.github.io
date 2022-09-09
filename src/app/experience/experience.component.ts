@@ -17,9 +17,9 @@ export class ExperienceComponent implements OnInit {
         date: 'August 2021 - Present',
         icon: PrimeIcons.CIRCLE,
         image: 'assets/images/mercury.svg',
-        color: 'grey',
+        color: '#85929e',
         description:
-          'Responsible for technology thought leadership, providing the elaboration and detailed design of Mercury’s technology solutions and the oversight of solution implementations relating to the Digital platforms and associated ecosystem.'
+          'I am currently working as a Technical Lead in the Digital and Integration space. I work closely with our Enterprise Solution Architects and Software Developers to ensure our enterprise solutions are fit-for-purpose in regards to design, integration, security and scalability to enable us to deliver high-quality Web and Mobile products for our customers'
       },
       {
         company: 'Vivo (Telefonica Brazil)',
@@ -28,9 +28,9 @@ export class ExperienceComponent implements OnInit {
         date: 'April 2020 - May 2021',
         icon: PrimeIcons.CIRCLE,
         image: 'assets/images/vivo.svg',
-        color: 'grey',
+        color: '#85929e',
         description:
-          'Defined technology roadmap for Cloud (Azure, AWS and GCP) and DevOps projects'
+          "I have worked as a Cloud and DevOps Manager for Vivo to help establish Vivo's DevOps framework to support CI/CD pipelines for ICT teams. I have also helped Vivo define its enterprise cloud strategy for the next few years as part of the Telefonica-Microsoft agreement to help them shift on-premise resources over to Microsoft Azure"
       },
       {
         company: 'Accenture New Zealand',
@@ -38,9 +38,9 @@ export class ExperienceComponent implements OnInit {
         url: 'https://www.accenture.com/nz-en/about/company/new-zealand',
         icon: PrimeIcons.CIRCLE,
         image: 'assets/images/accenture.svg',
-        color: 'grey',
+        color: '#85929e',
         description:
-          'Defined the technology strategy and roadmap to automate code development while building tasks using DevOps tools and principles'
+          "During my 3 years tenure with Acceture New Zealand, I was involved in inumerous projects to support Accenture' clients predominantly in the Health and Public sectors across New Zealand. The projects would involve different roles with many different focus such as Solution Architecture, Integration, Testing and DevOps"
       },
       {
         company: 'Accenture Brazil',
@@ -48,9 +48,9 @@ export class ExperienceComponent implements OnInit {
         url: 'https://www.accenture.com/br-pt',
         icon: PrimeIcons.CIRCLE,
         image: 'assets/images/accenture.svg',
-        color: 'grey',
+        color: '#85929e',
         description:
-          'Improved system quality by identifying issues and common patterns, and developing standard operating procedures'
+          'I have started my career as a Test Analyst back in 2007 moving to Software Development and Integration a few years later. After 9 years of experience working for multiple clients and projects across different locations within the LATAM region, I was offered a relocation to New Zealand to participate in a major business transformation project for a government agency in Wellington'
       }
     ]
   }
