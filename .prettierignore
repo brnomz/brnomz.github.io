@@ -10,3 +10,8 @@
 .eslintrc.json
 .gitignore
 yarn.lock
+*.txt
+*.woff
+*.eot
+*.ttf
+*.ico
