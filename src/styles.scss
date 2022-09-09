@@ -20,9 +20,10 @@ body .p-component {
   align-items: center;
   justify-content: center;
   vertical-align: middle;
+  display: flex;
+  flex-direction: row;
   line-height: 100px;
   background-color: gainsboro;
-  width: 100%;
   height: 100px;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -31,9 +32,8 @@ body .p-component {
 
 .flex-container-header h3 {
   background-color: gainsboro;
-  width: 100%;
   height: 100px;
-  margin: auto;
+  margin: 10px;
 }
 
 .spacing {
