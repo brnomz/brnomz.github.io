@@ -36,6 +36,11 @@ export class SkillsComponent implements OnInit {
         name: 'Project Management',
         description: 'Confluence, JIRA, LucidCharts, Miro',
         stars: 3
+      },
+      {
+        name: 'Tools',
+        description: 'Docker, NPM, VSCode, Yarn',
+        stars: 3
       }
     ]
   }

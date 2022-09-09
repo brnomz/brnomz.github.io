@@ -13,6 +13,8 @@ import { ExperienceComponent } from './experience/experience.component'
 import { EducationComponent } from './education/education.component'
 import { NgxSpinnerModule } from 'ngx-spinner'
 import { SkillsComponent } from './skills/skills.component'
+import { ContactComponent } from './contact/contact.component'
+import { InputTextModule } from 'primeng/inputtext'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { SkillsComponent } from './skills/skills.component'
     MainPageComponent,
     ExperienceComponent,
     EducationComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { SkillsComponent } from './skills/skills.component'
     CardModule,
     ButtonModule,
     TimelineModule,
-    NgxSpinnerModule.forRoot({ type: 'square-jelly-box' })
+    NgxSpinnerModule.forRoot({ type: 'square-jelly-box' }),
+    InputTextModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
