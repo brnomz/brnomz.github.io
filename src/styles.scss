@@ -15,6 +15,27 @@ body .p-component {
   font-family: "average";
 }
 
+.flex-container-header {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 100px;
+  background-color: gainsboro;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  scroll-margin: 52px;
+}
+
+.flex-container-header h3 {
+  background-color: gainsboro;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+}
+
 .spacing {
   margin-top: 50px;
 }
