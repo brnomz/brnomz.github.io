@@ -1,11 +1,15 @@
 .flex-container-main {
   display: flex;
   flex-direction: row;
-  background-color: gainsboro;
+  background-color: #eaecee;
   width: 100%;
   height: auto;
   position: relative;
   overflow: hidden;
+}
+
+a {
+  color: inherit;
 }
 
 .image {

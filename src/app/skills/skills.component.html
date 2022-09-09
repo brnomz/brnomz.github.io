@@ -1,3 +1,19 @@
-<div id="education" class="flex-container-header">
+<div id="skills" class="flex-container-header">
+  <i class="pi pi-star" style="font-size: 24px"></i>
   <h3>SKILLS</h3>
+</div>
+<div class="flex-container-skills-box">
+  <p-card
+    *ngFor="let skill of skills"
+    [header]="skill.name"
+    [subheader]="skill.description"
+    [style]="{ 'text-align': 'center' }"
+  >
+    <!--  <p>{{skill.stars}}</p> -->
+    <i
+      *ngFor="let item of starsArray(skill.stars)"
+      class="pi pi-star-fill"
+      style="color: black; margin: 2px; font-size: 20px"
+    ></i>
+  </p-card>
 </div>

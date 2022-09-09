@@ -1,0 +1,14 @@
+.flex-container-skills-box {
+  margin-left: 400px;
+  margin-right: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+p-card {
+  width: 300px;
+  margin: 10px;
+}

@@ -23,19 +23,24 @@ body .p-component {
   display: flex;
   flex-direction: row;
   line-height: 100px;
-  background-color: gainsboro;
+  background-color: #1a5276;
   height: 100px;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   scroll-margin: 52px;
 }
 
 .flex-container-header h3 {
-  background-color: gainsboro;
+  background-color: #1a5276;
+  color: #eaecee;
   height: 100px;
   margin: 10px;
 }
 
 .spacing {
   margin-top: 50px;
+}
+
+i {
+  color: #eaecee;
 }
