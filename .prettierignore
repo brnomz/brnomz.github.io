@@ -2,6 +2,7 @@
 .vscode/
 *.svg
 *.jpg
+*.jpeg
 *.png
 .eslintignore
 .husky/pre-commit
@@ -15,3 +16,5 @@ yarn.lock
 *.eot
 *.ttf
 *.ico
+*.nvmrc
+.assets/
