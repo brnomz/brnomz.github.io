@@ -12,6 +12,10 @@ a {
   color: inherit;
 }
 
+.intro-hello {
+  padding-bottom: 20px;
+}
+
 .image {
   display: block;
   margin-top: 80px;
@@ -99,7 +103,6 @@ img {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: auto;
   position: relative;
   overflow: hidden;
 }
@@ -111,7 +114,6 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 675px;
@@ -127,7 +129,6 @@ img {
 }
 
 .flex-container-intro-box p {
-  margin-top: 20px;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin: 10px;
+  text-align: justify;
 }

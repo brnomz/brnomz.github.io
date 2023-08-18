@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core'
-import { PrimeIcons } from 'primeng/api'
+import { Component, OnInit } from '@angular/core';
+import { PrimeIcons } from 'primeng/api';
 
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss']
+  styleUrls: ['./experience.component.scss'],
 })
 export class ExperienceComponent implements OnInit {
-  events: any[] = []
+  events: any[] = [];
 
-  ngOnInit (): void {
+  ngOnInit(): void {
     this.events = [
       {
         company: 'Mercury',
@@ -19,7 +19,7 @@ export class ExperienceComponent implements OnInit {
         image: 'assets/images/mercury.svg',
         color: '#85929e',
         description:
-          'I am currently working as a Technical Lead in the Digital and Integration space. I work closely with our Enterprise Solution Architects and Software Developers to ensure our enterprise solutions are fit-for-purpose in regards to design, integration, security and scalability to enable us to deliver high-quality Web and Mobile products for our customers'
+          'I am currently working as a Solution Architect in the Digital workstream. I collaborate closely with our Enterprise Solution Architects and Software Developers to ensure that our enterprise solutions adhere to the best design, integration, security, and scalability patterns. This enables us to deliver high-quality web and mobile applications to our customers.',
       },
       {
         company: 'Vivo (Telefonica Brazil)',
@@ -30,7 +30,7 @@ export class ExperienceComponent implements OnInit {
         image: 'assets/images/vivo.svg',
         color: '#85929e',
         description:
-          "I have worked as a Cloud and DevOps Manager for Vivo to help establish Vivo's DevOps framework to support CI/CD pipelines for ICT teams. I have also helped Vivo define its enterprise cloud strategy for the next few years as part of the Telefonica-Microsoft agreement to help them shift on-premise resources over to Microsoft Azure"
+          "I worked as a Cloud and DevOps Manager at Vivo, aiding in the establishment of Vivo's DevOps framework to bolster CI/CD pipelines for ICT teams. Additionally, I contributed to defining Vivo's enterprise cloud strategy for the upcoming years, aligning with the Telefonica-Microsoft agreement to facilitate the migration of on-premise resources to Microsoft Azure.",
       },
       {
         company: 'Accenture New Zealand',
@@ -40,7 +40,7 @@ export class ExperienceComponent implements OnInit {
         image: 'assets/images/accenture.svg',
         color: '#85929e',
         description:
-          "During my 3 years tenure with Acceture New Zealand, I was involved in inumerous projects to support Accenture' clients predominantly in the Health and Public sectors across New Zealand. The projects would involve different roles with many different focus such as Solution Architecture, Integration, Testing and DevOps"
+          "During my 3-year tenure with Accenture New Zealand, I was involved in numerous projects aimed at supporting Accenture's clients, primarily in the Health and Public sectors across New Zealand. These projects encompassed various roles, each with distinct focuses, such as Solution Architecture, Integration, Testing, and DevOps.",
       },
       {
         company: 'Accenture Brazil',
@@ -50,8 +50,8 @@ export class ExperienceComponent implements OnInit {
         image: 'assets/images/accenture.svg',
         color: '#85929e',
         description:
-          'I have started my career as a Test Analyst back in 2007 moving to Software Development and Integration a few years later. After 9 years of experience working for multiple clients and projects across different locations within the LATAM region, I was offered a relocation to New Zealand to participate in a major business transformation project for a government agency in Wellington'
-      }
-    ]
+          'I began my career as a Test Analyst in 2007, transitioning to Software Development and Integration a few years later. After accumulating 9 years of experience working with various clients and projects across multiple locations within the LATAM region, I received an opportunity to relocate to New Zealand. This relocation allowed me to participate in a significant business transformation project for a government agency in Wellington.',
+      },
+    ];
   }
 }

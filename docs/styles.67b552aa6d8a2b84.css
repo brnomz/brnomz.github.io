@@ -3779,7 +3779,9 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   margin: 0;
 }
 .p-organizationchart
-  .p-organizationchart-node-content.p-organizationchart-selectable-node:not(.p-highlight):hover {
+  .p-organizationchart-node-content.p-organizationchart-selectable-node:not(
+    .p-highlight
+  ):hover {
   background: #e9ecef;
   color: #495057;
 }

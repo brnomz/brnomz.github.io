@@ -1,13 +1,14 @@
 {
   "name": "my-digital-cv",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --no-watch --no-progress --browsers=ChromeHeadless --code-coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "prettier --write ."
   },
   "private": true,
   "dependencies": {
